@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# compileall
+# Alice O'Herin
+# 3/17/2019
+
+# otp_enc_d
+gcc -o otp_enc_d otp_enc_d.c otplib.c
+
+# otp_dec_d
+gcc -o otp_dec_d otp_dec_d.c otplib.c
+
+# otp_enc
+gcc -o otp_enc otp_enc.c otplib.c
+
+# otp_dec
+gcc -o otp_dec otp_dec.c otplib.c
+
+# keygen
+gcc -o keygen keygen.c
